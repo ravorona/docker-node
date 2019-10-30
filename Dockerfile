@@ -8,8 +8,7 @@ RUN apk update --no-cache && apk add \
     bash
 
 # Cleaning
-RUN apt-get purge -y --autoremove \
-  && rm -rf /var/lib/apt/lists/*
+RUN rm -rf /var/lib/apt/lists/*
 
 # Create working directory
 RUN mkdir /var/app
