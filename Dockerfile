@@ -5,7 +5,8 @@ RUN apk update --no-cache && apk add \
     util-linux \
     libc-dev \
     libpng-dev \
-    bash
+    bash \
+    git
 
 # Cleaning
 RUN rm -rf /var/lib/apt/lists/*
